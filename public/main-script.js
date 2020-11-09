@@ -36,23 +36,28 @@ function findMatches(search, rawdata)
     );
 }
 
+// display restaurants when available
 function displayResult()
 {
-    const matchArray = findMatches(this.value, rawdata);
-    const htmlList = matchArray.map(
-        restaurant =>
-        {
-            return `
-                <li class="list">
-                    <h4 class="name">${restaurant.name}</h4>
-                    <span class="id">${restaurant.address_line_1}, ${restaurant.city}, ${restaurant.state}, ${restaurant.zip}</span>
-                    <p class="inspection">${restaurant.category}</p>
-                    <p class="inspection">${restaurant.inspection_results}</p>
-                </li>
+    let htmlList = ``;
+    if(this.value.length > 0)
+    {
+        const matchArray = findMatches(this.value, rawdata);
+        htmlList = matchArray.map(
+            restaurant =>
+            {
+                return `
+                    <li class="list">
+                        <h4 class="name">${restaurant.name}</h4>
+                        <span class="id">${restaurant.address_line_1}, ${restaurant.city}, ${restaurant.state}, ${restaurant.zip}</span>
+                        <p class="inspection">${restaurant.category}</p>
+                        <p class="inspection">${restaurant.inspection_results}</p>
+                    </li>
             
-            `;
-        }
-    ).join("");
+                `;
+            }
+        ).join("");
+    }
 
     results.innerHTML = htmlList;
 
