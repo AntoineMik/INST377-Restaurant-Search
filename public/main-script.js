@@ -53,8 +53,9 @@ function displayResult()
                             <span class="id">${restaurant.address_line_1} <br>
                                 ${restaurant.city} <br> ${restaurant.state} <br> ${restaurant.zip}</span>
                         </address>
-                        <p class="inspection">${restaurant.category}</p>
-                        <p class="inspection">${restaurant.inspection_results}</p>
+                        <p class="inspection">Style: ${restaurant.category}</p>
+                        <p class="inspection"> Type Of Inspection: ${restaurant.inspection_type} <br> 
+                                            Result: ${restaurant.inspection_results}</p>
                     </li>
             
                 `;
