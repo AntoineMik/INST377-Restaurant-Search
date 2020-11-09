@@ -43,9 +43,10 @@ function displayResult()
         restaurant =>
         {
             return `
-                <li>
-                    <h5 class="name">${restaurant.name}</h5>
-                    <span class="id">${restaurant.city}, ${restaurant.state}, ${restaurant.zip}</span>
+                <li class="list">
+                    <h4 class="name">${restaurant.name}</h4>
+                    <span class="id">${restaurant.address_line_1}, ${restaurant.city}, ${restaurant.state}, ${restaurant.zip}</span>
+                    <p class="inspection">${restaurant.category}</p>
                     <p class="inspection">${restaurant.inspection_results}</p>
                 </li>
             
