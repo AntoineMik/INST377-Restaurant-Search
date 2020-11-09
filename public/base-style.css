@@ -1,11 +1,13 @@
 /*CSS*/
 body {
-    background: #eee;
+    background-color: rgb(141, 179, 122);
   }
   
   .wrapper {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
   }
   
   .container {
@@ -22,5 +24,49 @@ body {
     margin: 0;
     margin-bottom: 5px;
     padding: 4px 8px;
+  }
+
+  .resultArea {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 4px 8px;
     border-radius: 4px;
   }
+
+  .textbox {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+
+  .searchbox {
+    background-color: aliceblue;
+    border-radius: 4px;
+    width: 300px;
+    height: 50px;
+    padding: 4px 8px;
+    font-size: xx-large;
+    
+  }
+
+  .results {
+      list-style-type: none;
+  }
+
+  
+  .list {
+    background-image: linear-gradient(#b8c5d6, #edf5fc);
+    flex-flow: row wrap;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 4px 8px;
+  }
+
