@@ -1,6 +1,9 @@
 /*CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
 body {
     background-color: rgb(141, 179, 122);
+    font-family: 'Karla', sans-serif;
   }
   
   .wrapper {
@@ -54,7 +57,6 @@ body {
     height: 50px;
     padding: 4px 8px;
     font-size: xx-large;
-    
   }
 
   .results {
@@ -68,5 +70,31 @@ body {
     border-radius: 4px;
     margin: 10px;
     padding: 4px 8px;
+  }
+
+  .id {
+      font-style: italic;
+  }
+
+
+
+  @media only screen and (max-width: 600px) {
+    
+    
+    .searchbox {
+        width: 150px;
+        height: 25px;
+        font-size: medium;
+      }
+
+
+      .header h1 {
+        font-size: medium;
+      }
+
+      .list {
+          font-size: medium;
+      }
+
   }
 
