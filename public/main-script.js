@@ -49,7 +49,10 @@ function displayResult()
                 return `
                     <li class="list">
                         <h4 class="name">${restaurant.name}</h4>
-                        <span class="id">${restaurant.address_line_1}, ${restaurant.city}, ${restaurant.state}, ${restaurant.zip}</span>
+                        <address>
+                            <span class="id">${restaurant.address_line_1} <br>
+                                ${restaurant.city} <br> ${restaurant.state} <br> ${restaurant.zip}</span>
+                        </address>
                         <p class="inspection">${restaurant.category}</p>
                         <p class="inspection">${restaurant.inspection_results}</p>
                     </li>
