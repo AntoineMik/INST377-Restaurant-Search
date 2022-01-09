@@ -1,2 +1,3 @@
 # INST377-Assignment-2
-INST377 ASSIGNMENT 2
+Restaurant search app.
+Searches restaurants in PG county to see their rating and compliance.
